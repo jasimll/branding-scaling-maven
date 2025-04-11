@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="relative hidden lg:block">
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-purple-500/20 rounded-2xl filter blur-3xl opacity-30"></div>
             <div className="relative bg-secondary rounded-2xl p-2 border border-muted animate-fade-up">
-              <div className="aspect-[3/4] rounded-xl bg-muted overflow-hidden">
+              <div className="aspect-[3/4] rounded-xl bg-muted overflow-hidden max-w-[80%] mx-auto">
                 <img 
                   src="/lovable-uploads/efc01496-7e41-401e-9bde-f5305e089afc.png" 
                   alt="Jasim Jaleel - Performance Marketing Expert" 
