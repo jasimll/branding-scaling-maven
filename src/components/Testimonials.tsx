@@ -25,6 +25,40 @@ const testimonials = [
   }
 ];
 
+// Generate 30 company names for the logos
+const clientLogos = [
+  'Neo Front Furniture', 
+  'Viralmafia', 
+  'MPD Services', 
+  'Dahab Miners',
+  'TechVerse',
+  'GlobalReach',
+  'Innovate Hub',
+  'Digital Dynamics',
+  'FutureTech',
+  'Vibrant Media',
+  'MarketPro',
+  'EcoSmart',
+  'PrimeStyle',
+  'ConnectWave',
+  'BrightPath',
+  'Skyline Solutions',
+  'OmniTrade',
+  'Pinnacle Partners',
+  'Elite Edge',
+  'Quantum Leap',
+  'Zenith Group',
+  'Spectrum Brands',
+  'Apex Global',
+  'Fusion Tech',
+  'Catalyst Corp',
+  'Nexus Network',
+  'Harmony Health',
+  'Velocity Ventures',
+  'Summit Systems',
+  'Infinite Solutions'
+];
+
 const Testimonials = () => {
   return (
     <section id="testimonials" className="py-16 md:py-24 bg-secondary/20">
@@ -54,8 +88,8 @@ const Testimonials = () => {
         
         <div className="mt-16">
           <h3 className="text-xl font-semibold mb-8 text-center">Trusted By</h3>
-          <div className="flex flex-wrap justify-center gap-8">
-            {['Neo Front Furniture', 'Viralmafia', 'MPD Services', 'Dahab Miners'].map((client, index) => (
+          <div className="flex flex-wrap justify-center gap-4 max-w-6xl mx-auto">
+            {clientLogos.map((client, index) => (
               <div key={index} className="grayscale hover:grayscale-0 transition-all">
                 <div className="h-12 bg-muted px-6 rounded flex items-center justify-center">
                   <p className="font-medium text-sm">{client}</p>

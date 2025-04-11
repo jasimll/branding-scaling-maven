@@ -15,11 +15,11 @@ const About = () => {
             </p>
             
             <p className="text-lg mb-6">
-              Leveraging AI-powered bidding, advanced audience segmentation, and multi-channel attribution, he helps businesses scale profitably.
+              As a performance marketing trainer, Jasim has trained 100+ students and business owners on effective digital marketing strategies. Leveraging AI-powered bidding, advanced audience segmentation, and multi-channel attribution, he helps businesses scale profitably.
             </p>
             
             <p className="text-lg mb-6">
-              Jasim works with clients from India, UAE, Germany, Qatar, Saudi Arabia, and the USA. He holds certifications in Google Ads, Meta Ads, HubSpot, and more.
+              Jasim works with clients from India, UAE, Germany, Qatar, Saudi Arabia, and the USA. He holds 15+ certifications in Google Ads, Meta Ads, HubSpot, and more.
             </p>
           </div>
           
@@ -33,12 +33,12 @@ const About = () => {
               <p className="text-sm">Clients Worldwide</p>
             </div>
             <div className="bg-secondary rounded-lg p-4 text-center">
-              <p className="text-4xl font-bold text-primary">5+</p>
+              <p className="text-4xl font-bold text-primary">15+</p>
               <p className="text-sm">Certifications</p>
             </div>
             <div className="bg-secondary rounded-lg p-4 text-center">
-              <p className="text-4xl font-bold text-primary">6</p>
-              <p className="text-sm">Countries</p>
+              <p className="text-4xl font-bold text-primary">100+</p>
+              <p className="text-sm">Trained Students</p>
             </div>
           </div>
         </div>

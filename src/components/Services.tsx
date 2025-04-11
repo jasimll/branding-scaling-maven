@@ -7,7 +7,8 @@ import {
   Store, 
   Search, 
   ShoppingCart, 
-  Target
+  Target,
+  Youtube
 } from 'lucide-react';
 
 const services = [
@@ -20,6 +21,11 @@ const services = [
     title: 'Meta (Facebook & Instagram) Ads',
     description: 'Engaging social media advertising campaigns that build brand awareness and generate qualified leads.',
     icon: BadgePercent
+  },
+  {
+    title: 'YouTube Ads',
+    description: 'Compelling video advertising campaigns that increase brand reach and drive conversions.',
+    icon: Youtube
   },
   {
     title: 'E-commerce Growth Strategy',
