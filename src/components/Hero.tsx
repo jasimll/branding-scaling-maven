@@ -12,10 +12,10 @@ const Hero = () => {
             <div>
               <h2 className="text-lg text-primary mb-2">Best Performance Marketer in Kerala</h2>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                Scaling Brands with <span className="text-gradient">Performance Marketing</span>
+                Expert in Paid Ads, Kerala-Based Marketing Strategist
               </h1>
               <p className="text-xl text-muted-foreground">
-                Jasim Jaleel — Certified Performance Marketer | Google & Meta Ads Expert
+                Jasim Jaleel — Certified Performance Marketing Expert | Google & Meta Ads Specialist in Kerala
               </p>
             </div>
             
@@ -40,8 +40,11 @@ const Hero = () => {
               <div className="aspect-[3/4] rounded-xl bg-muted overflow-hidden max-w-[80%] mx-auto">
                 <img 
                   src="/lovable-uploads/efc01496-7e41-401e-9bde-f5305e089afc.png" 
-                  alt="Jasim Jaleel - Performance Marketing Expert" 
+                  alt="Jasim Jaleel - Google Ads & Meta Ads Expert in Kerala, Performance Marketing Specialist based in Kochi"
                   className="w-full h-full object-cover"
+                  loading="eager"
+                  width="800"
+                  height="1067"
                 />
               </div>
             </div>
