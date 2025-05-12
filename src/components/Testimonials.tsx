@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Quote, School, ShoppingCart, Shirt, Medkit, Sofa, Bitcoin, Utensils, Home, BarChart3, Building } from 'lucide-react';
+import { Quote, School, ShoppingCart, Shirt, Heart, Sofa, Bitcoin, Utensils, Home, BarChart3, Building } from 'lucide-react';
 
 const testimonials = [
   {
@@ -66,7 +67,7 @@ const categories = [
   { name: 'E-commerce', icon: <ShoppingCart className="mr-2" /> },
   { name: 'Fashion', icon: <Shirt className="mr-2" /> },
   { name: 'Retail', icon: <ShoppingCart className="mr-2" /> },
-  { name: 'Medical', icon: <Medkit className="mr-2" /> },
+  { name: 'Medical', icon: <Heart className="mr-2" /> },
   { name: 'Home & Interior', icon: <Sofa className="mr-2" /> },
   { name: 'Crypto & Trading', icon: <Bitcoin className="mr-2" /> },
   { name: 'Restaurant', icon: <Utensils className="mr-2" /> },
