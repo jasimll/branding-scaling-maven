@@ -26,7 +26,6 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-6">
             <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">About</a>
             <a href="#services" className="text-sm font-medium hover:text-primary transition-colors">Services</a>
-            <a href="#skills" className="text-sm font-medium hover:text-primary transition-colors">Skills</a>
             <a href="#testimonials" className="text-sm font-medium hover:text-primary transition-colors">Testimonials</a>
             <a href="#case-studies" className="text-sm font-medium hover:text-primary transition-colors">Case Studies</a>
             <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">Contact</a>
@@ -45,7 +44,6 @@ const Header = () => {
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <a href="#about" className="text-sm font-medium py-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>About</a>
             <a href="#services" className="text-sm font-medium py-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Services</a>
-            <a href="#skills" className="text-sm font-medium py-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Skills</a>
             <a href="#testimonials" className="text-sm font-medium py-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Testimonials</a>
             <a href="#case-studies" className="text-sm font-medium py-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Case Studies</a>
             <a href="#contact" className="text-sm font-medium py-2 hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>Contact</a>
