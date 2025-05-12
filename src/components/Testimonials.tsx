@@ -25,38 +25,54 @@ const testimonials = [
   }
 ];
 
-// Generate 30 company names for the logos
+// Complete client list
 const clientLogos = [
-  'Neo Front Furniture', 
-  'Viralmafia', 
-  'MPD Services', 
+  'Viral Mafia', 
+  'City Optik', 
+  'Kalyan Sarees', 
+  'Kalyan Super99',
+  'Horizon Motors',
+  'Golf Superstore',
+  'I Sports',
+  'Kings Space LLC',
+  'Neo Front Furniture',
+  'Kannankandy',
+  'MPD Services',
+  'Essen Nutrition',
+  'Fresco',
+  'Appolos English School',
+  'TIME',
+  'Accounts Solutions',
+  'Alhind Aviation Academy',
+  'Thinklish Academy',
+  'Rajakumari Gold and Diamonds',
+  'Kerala Spices',
+  'My OP',
+  'Tron Academy',
+  'Tron Digital',
   'Dahab Miners',
-  'TechVerse',
-  'GlobalReach',
-  'Innovate Hub',
-  'Digital Dynamics',
-  'FutureTech',
-  'Vibrant Media',
-  'MarketPro',
-  'EcoSmart',
-  'PrimeStyle',
-  'ConnectWave',
-  'BrightPath',
-  'Skyline Solutions',
-  'OmniTrade',
-  'Pinnacle Partners',
-  'Elite Edge',
-  'Quantum Leap',
-  'Zenith Group',
-  'Spectrum Brands',
-  'Apex Global',
-  'Fusion Tech',
-  'Catalyst Corp',
-  'Nexus Network',
-  'Harmony Health',
-  'Velocity Ventures',
-  'Summit Systems',
-  'Infinite Solutions'
+  'Tikka Tonight',
+  'Lebanese Mill Restaurant',
+  'Rashidali Cafeteria',
+  'Caletal Realty',
+  'Earth Craft Realty',
+  'Brandflair',
+  'WeSpeak Academy',
+  'Flair Academy'
+];
+
+// Categories handled
+const categories = [
+  'Education',
+  'E-commerce',
+  'Fashion',
+  'Retail',
+  'Medical',
+  'Home & Interior',
+  'Crypto & Trading',
+  'Restaurant',
+  'Real Estate',
+  'Digital Services'
 ];
 
 const Testimonials = () => {
@@ -85,8 +101,19 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="mt-16">
+          <h3 className="text-xl font-semibold mb-8 text-center">Categories I Handle</h3>
+          <div className="flex flex-wrap justify-center gap-4 max-w-6xl mx-auto mb-12">
+            {categories.map((category, index) => (
+              <div key={index} className="bg-primary/10 px-4 py-2 rounded-full hover:bg-primary/20 transition-colors">
+                <p className="font-medium text-sm">{category}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div className="mt-8">
           <h3 className="text-xl font-semibold mb-8 text-center">Trusted By</h3>
           <div className="flex flex-wrap justify-center gap-4 max-w-6xl mx-auto">
             {clientLogos.map((client, index) => (
