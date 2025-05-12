@@ -79,6 +79,21 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-16 md:py-24 bg-secondary/20">
       <div className="container mx-auto px-4 md:px-6">
+        <div className="mb-16">
+          <h3 className="text-3xl font-bold mb-2 text-center">Categories I Handle</h3>
+          <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+            {categories.map((category, index) => (
+              <div key={index} className="bg-primary/10 p-4 rounded-lg hover:bg-primary/20 transition-colors flex flex-col items-center justify-center text-center hover:scale-105 transition-transform">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-2 text-primary">
+                  {category.icon}
+                </div>
+                <p className="font-medium">{category.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-2">What My Clients Say</h2>
           <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
@@ -101,22 +116,8 @@ const Testimonials = () => {
             </div>
           ))}
         </div>
-
-        <div className="mt-16">
-          <h3 className="text-xl font-semibold mb-8 text-center">Categories I Handle</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto mb-12">
-            {categories.map((category, index) => (
-              <div key={index} className="bg-primary/10 p-4 rounded-lg hover:bg-primary/20 transition-colors flex flex-col items-center justify-center text-center hover:scale-105 transition-transform">
-                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-2 text-primary">
-                  {category.icon}
-                </div>
-                <p className="font-medium">{category.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
         
-        <div className="mt-8">
+        <div className="mt-16">
           <h3 className="text-xl font-semibold mb-8 text-center">Trusted By</h3>
           <div className="flex flex-wrap justify-center gap-4 max-w-6xl mx-auto">
             {clientLogos.map((client, index) => (
