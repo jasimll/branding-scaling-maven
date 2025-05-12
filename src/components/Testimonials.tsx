@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Quote } from 'lucide-react';
+import { Quote, School, ShoppingCart, Shirt, Medkit, Sofa, Bitcoin, Utensils, Home, BarChart3, Building } from 'lucide-react';
 
 const testimonials = [
   {
@@ -61,18 +60,18 @@ const clientLogos = [
   'Flair Academy'
 ];
 
-// Categories handled
+// Categories handled with icons
 const categories = [
-  'Education',
-  'E-commerce',
-  'Fashion',
-  'Retail',
-  'Medical',
-  'Home & Interior',
-  'Crypto & Trading',
-  'Restaurant',
-  'Real Estate',
-  'Digital Services'
+  { name: 'Education', icon: <School className="mr-2" /> },
+  { name: 'E-commerce', icon: <ShoppingCart className="mr-2" /> },
+  { name: 'Fashion', icon: <Shirt className="mr-2" /> },
+  { name: 'Retail', icon: <ShoppingCart className="mr-2" /> },
+  { name: 'Medical', icon: <Medkit className="mr-2" /> },
+  { name: 'Home & Interior', icon: <Sofa className="mr-2" /> },
+  { name: 'Crypto & Trading', icon: <Bitcoin className="mr-2" /> },
+  { name: 'Restaurant', icon: <Utensils className="mr-2" /> },
+  { name: 'Real Estate', icon: <Building className="mr-2" /> },
+  { name: 'Digital Services', icon: <BarChart3 className="mr-2" /> }
 ];
 
 const Testimonials = () => {
@@ -104,10 +103,13 @@ const Testimonials = () => {
 
         <div className="mt-16">
           <h3 className="text-xl font-semibold mb-8 text-center">Categories I Handle</h3>
-          <div className="flex flex-wrap justify-center gap-4 max-w-6xl mx-auto mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto mb-12">
             {categories.map((category, index) => (
-              <div key={index} className="bg-primary/10 px-4 py-2 rounded-full hover:bg-primary/20 transition-colors">
-                <p className="font-medium text-sm">{category}</p>
+              <div key={index} className="bg-primary/10 p-4 rounded-lg hover:bg-primary/20 transition-colors flex flex-col items-center justify-center text-center hover:scale-105 transition-transform">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-2 text-primary">
+                  {category.icon}
+                </div>
+                <p className="font-medium">{category.name}</p>
               </div>
             ))}
           </div>
